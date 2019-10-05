@@ -20,7 +20,9 @@ function fuzzyMatch(array, string){
 
 function matchName(array, string){
   
-  
+   return array.filter(function (driver) {
+      return driver.name.toLowerCase() === string.toLowerCase();
+    });
   
   
   
