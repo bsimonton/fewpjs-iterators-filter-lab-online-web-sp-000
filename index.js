@@ -11,7 +11,10 @@ function findMatching(array, string){
 
 function fuzzyMatch(array, string){
   
-  
+   let lengthOfName = letters.length;
+    return drivers.filter(function (driverName) {
+      return driverName.slice(0, lengthOfName) === letters;
+    });
   
   
   
